@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+}
+
+.sidebar {
+  flex-basis: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+@media (max-width: 640px) {
+  .sidebar {
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+  }
+}
